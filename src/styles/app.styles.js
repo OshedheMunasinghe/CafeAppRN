@@ -6,4 +6,10 @@ export const AppStyles = StyleSheet.create({
     width: "100%",
     height: "100%",
   },
+  thankYouViewContainer: {
+    backgroundColor: "#212325",
+    width: "100%",
+    height: "100%",
+    alignItems: "center",
+  },
 });
