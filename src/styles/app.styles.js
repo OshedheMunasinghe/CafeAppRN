@@ -13,14 +13,10 @@ export const AppStyles = StyleSheet.create({
     alignItems: "center",
   },
   shadow: {
-    shadowColor: "#000",
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 3.84,
-
+    shadowColor: '#000',
+    shadowOffset: { width: 1, height: 1 },
+    shadowOpacity:  0.4,
+    shadowRadius: 3,
     elevation: 5,
   },
 });

@@ -1,6 +1,5 @@
 import React from "react";
-import { ScrollView, Text, TouchableOpacity, View } from "react-native";
-import Chip from "../../components/Buttons/Chip/Chip";
+import { ScrollView } from "react-native";
 import ListofChips from "../../components/Lists/ListOfChips/ListofChips";
 
 //TODO Scrollbar horizont: chips
@@ -15,38 +14,9 @@ import ListofChips from "../../components/Lists/ListOfChips/ListofChips";
 
 const Menu = () => {
   return (
-    <View>
-     {/* <ScrollView pagingEnabled={true}>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      <View style={{backgroundColor: 'black', width: 100, height: 100, borderRadius: 8, marginBottom: 8}}/>
-      </ScrollView>*/}
-
-    {/* * CHIPS */}
-{/*      TODO en komponent lista med chips här*/}
-{/*      TODO varje chips ska ha en props text där man kan ändra text och kanske anropa databas? */}
-  <ListofChips/>
-    </View>
+    <ScrollView pagingEnabled={true}>
+      <ListofChips />
+    </ScrollView>
   );
 };
 export default Menu;
