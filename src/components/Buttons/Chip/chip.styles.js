@@ -15,6 +15,5 @@ export const ChipStyles = StyleSheet.create({
   textStyle: {
     fontSize: 14,
     fontFamily: "Mont-Regular",
-
   },
 });

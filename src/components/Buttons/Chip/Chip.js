@@ -5,60 +5,61 @@ import { AppStyles } from "../../../styles/app.styles";
 
 const { container, touchableContainer, textStyle } = ChipStyles;
 const { shadow } = AppStyles;
-const Chip = ({ text, width }) => {
-  const [pressed, setPressed] = useState(true);
-  const [lightPress, setLightPress] = useState("#D9CABC");
-  const [textColor, setTextColor] = useState("#000");
 
-  // Challange to make it 2 in one
-  const [enlightButton, setEnlightButton] = useState({ color: "#000", backgroundColor: "#D9CABC" });
-  const buttonHandler = () => {
-    console.log("Button Pressed: " + text);
-    // setLightPress("#C49450");
-    // setTextColor("#fff");
-    // setTouchChip(false)
-    // setEnlightButton({color: "#FFF", backgroundColor: "#C49450" });
-    setPressed(false)
+const regChipBackgrColor = "#D9CABC";
+const regChipTextColor = "black";
+const selectedChipBackgrColor = "#C49450";
+const selectedChipTextColor = "white";
+
+const Chip = ({ text, width }) => {
+  const [pressed, setPressed] = useState(false);
+  const [backgrClr, setBackgrClr] = useState(regChipBackgrColor);
+  const [textColor, setTextColor] = useState(regChipTextColor);
+
+  // When button is pressed
+  const selectedButton = () => {
+    setPressed(true);
+    setTextColor(selectedChipTextColor);
+    setBackgrClr(selectedChipBackgrColor);
   };
+
+  // Deselecting button pressed
+  const deselectButton = () => {
+    setPressed(false);
+    setBackgrClr(regChipBackgrColor);
+    setTextColor(regChipTextColor);
+  };
+
   return (
     <View>
-
-        <TouchableOpacity style={[touchableContainer]} onPress={buttonHandler}>
-          {/*    * ORGINAL */}
-          {/*    <View style={[{
+      {!pressed ?
+        // * SELECTED BUTTON
+        <TouchableOpacity style={[touchableContainer]} onPress={() => selectedButton()}>
+          <View style={[{
             width: width,
-            backgroundColor: lightPress,
+            backgroundColor: backgrClr,
           },
             container,
             shadow,
-          ]}>*/}
-
-          <View style={[
-            {
-              width: width,
-              backgroundColor: pressed ? 'black' : 'white',
-            },
+          ]}>
+            <Text style={[textStyle, { color: textColor }]}>{text}</Text>
+          </View>
+        </TouchableOpacity> :
+        // * DESELECTED
+        <TouchableOpacity style={[touchableContainer]} onPress={() => deselectButton()}>
+          <View style={[{
+            width: width,
+            backgroundColor: backgrClr,
+          },
             container,
             shadow,
-            // enlightButton,
           ]}>
-
-            <Text style={[textStyle, { color: pressed ? 'white' : 'black' }]}>{text}</Text>
+            <Text style={[textStyle, { color: textColor }]}>{text}</Text>
           </View>
         </TouchableOpacity>
 
+      }
     </View>
-    /*<TouchableOpacity style={[touchableContainer]}>
-      <View style={[{
-        width: width,
-        backgroundColor: "#C49450",
-      },
-        container,
-        shadow,
-      ]}>
-        <Text style={textStyle}>{text}</Text>
-      </View>
-    </TouchableOpacity>*/
   );
 };
 export default Chip;

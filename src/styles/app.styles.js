@@ -14,9 +14,9 @@ export const AppStyles = StyleSheet.create({
   },
   shadow: {
     shadowColor: '#000',
-    shadowOffset: { width: 1, height: 1 },
-    shadowOpacity:  0.4,
+    shadowOffset: { width: 3, height: 3 },
+    shadowOpacity:  0.2,
     shadowRadius: 3,
-    elevation: 5,
+    elevation: 2,
   },
 });
