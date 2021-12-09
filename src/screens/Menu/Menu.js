@@ -5,7 +5,6 @@ import MenuTopBar from "../../components/MenuTopBar/MenuTopBar";
 import ListOfAllDrinks from "../../components/Lists/ListOfAllDrinks/ListOfAllDrinks";
 
 //TODO Scrollbar whole view
-//TODO Cards of Cuppochino
 //TODO Cards speciall for you only 3 hardCoded
 //TODO Icon where you store cart
 //TODO Navigation THIS IS GOING TO BE COMPLICATED GOOD LUCK :)
@@ -18,7 +17,7 @@ const Menu = () => {
       <MenuTopBar />
       <ScrollView pagingEnabled={true}>
         <ListOfChips />
-        <ListOfAllDrinks/>
+        <ListOfAllDrinks />
       </ScrollView>
     </View>
   );
