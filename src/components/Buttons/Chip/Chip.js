@@ -1,18 +1,19 @@
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
+import { ChipStyles } from "./chip.styles";
+import { AppStyles } from "../../../styles/app.styles";
 
-const Chip = () => {
-  return(
-    <TouchableOpacity>
-      <View style={{backgroundColor: '#C49450', width: 45, height:36, justifyContent:'center', alignItems: 'center', borderRadius: 45}}>
-        <Text style={{
-          fontSize: 14,
-          fontFamily: 'Mont-Regular',
-          color: 'white',
-        }}>All</Text>
+const { container, touchableContainer, textStyle } = ChipStyles;
+const { shadow } = AppStyles;
+const Chip = ({ text, width }) => {
+  return (
+    <TouchableOpacity style={[shadow, touchableContainer]}>
+      <View style={[{
+        width: width,
+      }, container]}>
+        <Text style={textStyle}>{text}</Text>
       </View>
     </TouchableOpacity>
-
-  )
-}
-export default Chip
+  );
+};
+export default Chip;
