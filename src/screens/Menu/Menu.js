@@ -1,8 +1,8 @@
 import React from "react";
 import { ScrollView, View } from "react-native";
-import ListofChips from "../../components/Lists/ListOfChips/ListofChips";
-import Brandmarklogo from "../../components/BrandmarkLogo/Brandmarklogo";
+import ListOfChips from "../../components/Lists/ListOfChips/ListofChips";
 import MenuTopBar from "../../components/MenuTopBar/MenuTopBar";
+import ListOfAllDrinks from "../../components/Lists/ListOfAllDrinks/ListOfAllDrinks";
 
 //TODO Scrollbar whole view
 //TODO Cards of Cuppochino
@@ -15,9 +15,10 @@ import MenuTopBar from "../../components/MenuTopBar/MenuTopBar";
 const Menu = () => {
   return (
     <View>
-     <MenuTopBar/>
+      <MenuTopBar />
       <ScrollView pagingEnabled={true}>
-        <ListofChips />
+        <ListOfChips />
+        <ListOfAllDrinks/>
       </ScrollView>
     </View>
   );

@@ -14,7 +14,7 @@ export const BrandmarklogoStyles = StyleSheet.create({
     color: "#C49450",
     textAlign: "right",
   },
-  conatiner: {
+  container: {
     justifyContent: "center",
     alignItems: "center",
     flexDirection: "row",
