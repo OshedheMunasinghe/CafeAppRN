@@ -4,7 +4,7 @@ import { OrdernowbuttonStyles } from "./ordernowbutton.styles";
 import { AppStyles } from "../../../styles/app.styles";
 
 const { buttonContainer, textContainer } = OrdernowbuttonStyles;
-const {shadow} = AppStyles
+const { shadow } = AppStyles;
 const OrderNowButton = () => {
   return (
     <View>

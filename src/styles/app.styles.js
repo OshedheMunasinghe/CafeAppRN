@@ -13,9 +13,9 @@ export const AppStyles = StyleSheet.create({
     alignItems: "center",
   },
   shadow: {
-    shadowColor: '#000',
+    shadowColor: "#000",
     shadowOffset: { width: 3, height: 3 },
-    shadowOpacity:  0.2,
+    shadowOpacity: 0.2,
     shadowRadius: 3,
     elevation: 2,
   },
