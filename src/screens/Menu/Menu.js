@@ -7,9 +7,6 @@ import SpecialView from "../../components/Special/SpecialView";
 
 //TODO BUGG SCROLLVIEW MAYBE CHANGE TO FLAT ASS LIST?
 //TODO Navigation THIS IS GOING TO BE COMPLICATED GOOD LUCK :)
-//! TODO Don't forget shadows
-//TODO TOAST on limited components "SORRY THIS IS LIMITED EDT" kolla Heatmap hur Toast fungerar!??
-// TODO priority logic later when icon has put cart
 const Menu = () => {
   return (
     <View>
