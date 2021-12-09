@@ -1,22 +1,15 @@
 import React from "react";
-import { Text, TouchableOpacity, View } from "react-native";
-import { AddbuttonStyles } from "./addbutton.styles";
+import { TouchableOpacity, View } from "react-native";
+import { AddButtonStyles } from "./addButtonStyles";
+import Icon from "react-native-vector-icons/Feather";
 
-const { container, touchContainer, plusContainer, plusTextContainer } = AddbuttonStyles;
-
-function PlusButton() {
-  return (
-    <View style={plusContainer}>
-      <Text style={plusTextContainer}>+</Text>
-    </View>
-  );
-}
+const { container, touchContainer, plusContainer } = AddButtonStyles;
 
 export const AddButton = () => {
   return (
     <View style={container}>
       <TouchableOpacity style={touchContainer}>
-        <PlusButton />
+        <Icon name="plus" size={30} color="black" style={[plusContainer]} />
       </TouchableOpacity>
     </View>
   );

@@ -1,7 +1,7 @@
 import { StatusBar, Text, View } from "react-native";
 import React from "react";
 import { AppStyles } from "../../styles/app.styles";
-import BoxView from "../../components/Cards/Box/BoxView";
+import BoxView from "../../components/Cards/BoxCard/BoxView";
 import { ThankYouStyles } from "./thankYouStyles";
 
 const { thankYouViewContainer } = AppStyles;

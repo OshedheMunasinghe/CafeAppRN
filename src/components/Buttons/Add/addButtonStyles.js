@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const AddbuttonStyles = StyleSheet.create({
+export const AddButtonStyles = StyleSheet.create({
   container: {
     justifyContent: "flex-end",
     alignItems: "flex-end",
@@ -16,16 +16,9 @@ export const AddbuttonStyles = StyleSheet.create({
     alignItems: "center",
 
   },
-//  * PLUS BUTTON STYLE
   plusContainer: {
     justifyContent: "center",
     alignItems: "center",
-    bottom: 6,
-  },
-  plusTextContainer: {
-    color: "black",
-    fontFamily: "Mont-Bold",
-    fontSize: 32,
     opacity: 0.8,
   },
 });

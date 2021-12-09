@@ -3,10 +3,9 @@ import { ScrollView, View } from "react-native";
 import ListOfChips from "../../components/Lists/ListOfChips/ListofChips";
 import MenuTopBar from "../../components/MenuTopBar/MenuTopBar";
 import ListOfAllDrinks from "../../components/Lists/ListOfAllDrinks/ListOfAllDrinks";
+import SpecialView from "../../components/Special/SpecialView";
 
-//TODO Scrollbar whole view
-//TODO Cards speciall for you only 3 hardCoded
-//TODO Icon where you store cart
+//TODO BUGG SCROLLVIEW MAYBE CHANGE TO FLAT ASS LIST?
 //TODO Navigation THIS IS GOING TO BE COMPLICATED GOOD LUCK :)
 //! TODO Don't forget shadows
 //TODO TOAST on limited components "SORRY THIS IS LIMITED EDT" kolla Heatmap hur Toast fungerar!??
@@ -18,6 +17,7 @@ const Menu = () => {
       <ScrollView pagingEnabled={true}>
         <ListOfChips />
         <ListOfAllDrinks />
+        <SpecialView />
       </ScrollView>
     </View>
   );
