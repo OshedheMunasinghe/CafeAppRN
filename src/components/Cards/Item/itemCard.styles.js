@@ -25,22 +25,32 @@ export const ItemCardStyles = StyleSheet.create({
     fontSize: 20,
     fontFamily: "Mont-Bold",
     color: "#D4A056",
-    right: 18
+    right: 18,
   },
   extraText: {
     fontFamily: "Mont-Regular",
     color: "#9199A1",
     fontSize: 14,
-    marginTop: 8
+    marginTop: 8,
   },
   rateText: {
     color: "#F8E7D7",
     fontFamily: "Mont-Bold",
-    left:8,
+    left: 8,
   },
   peopleRateText: {
     fontFamily: "Mont-Regular",
     color: "#9199A1",
-left: 18
+    left: 18,
+  },
+  headPriceContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+  },
+  ratePeopleRateContainer: {
+    flexDirection: "row",
+    alignItems: "center",
+    marginTop: 8,
   },
 });
