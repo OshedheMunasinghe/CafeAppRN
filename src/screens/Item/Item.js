@@ -1,7 +1,8 @@
 import React from "react";
-import { View } from "react-native";
+import { Text, View } from "react-native";
 import MenuTopBar from "../../components/MenuTopBar/MenuTopBar";
-import SelectiveButtons from "../../components/Buttons/SML/SelectiveButtons";
+import SelectiveCups from "../../components/SelectiveCups/SelectiveCups";
+import ItemCard from "../../components/Cards/Item/itemCard";
 
 //TODO make sure image can change diffrent size.
 //TODO button indicator S M L
@@ -10,10 +11,10 @@ import SelectiveButtons from "../../components/Buttons/SML/SelectiveButtons";
 const Item = () => {
   return (
     <View>
+      {/* ! MENU TOP BAR SHOULDNT BE HERE! IT SHOULD BE IN SUPER - SCREEN CLASS*/}
       <MenuTopBar />
-      <View style={{}}>
-        <SelectiveButtons />
-      </View>
+      <SelectiveCups />
+      <ItemCard/>
 
     </View>
   );

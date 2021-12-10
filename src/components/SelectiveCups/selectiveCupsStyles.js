@@ -1,16 +1,16 @@
 import { StyleSheet } from "react-native";
 
-export const SelectiveButtonsStyles = StyleSheet.create({
+export const SelectiveCupsStyles = StyleSheet.create({
   container: {
     alignItems: "center",
     justifyContent: "center",
-    marginTop: 355,
   },
   boderContainer: {
     width: 313,
     borderWidth: 2,
     borderColor: "#CABCAD",
     opacity: 0.75,
+    marginTop: 30
   },
   buttonsContainer: {
     flexDirection: "row",
