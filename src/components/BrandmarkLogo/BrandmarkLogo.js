@@ -1,10 +1,10 @@
 import React from "react";
 import { Text, View } from "react-native";
-import { BrandmarklogoStyles } from "./brandmarklogo.styles";
+import { BrandmarkLogoStyles } from "./brandmarkLogo.styles";
 
-const { textStyle, textEe, textCoff, container } = BrandmarklogoStyles;
+const { textStyle, textEe, textCoff, container } = BrandmarkLogoStyles;
 
-const Brandmarklogo = () => {
+const BrandmarkLogo = () => {
   return (
     <View style={container}>
       <Text style={[textStyle, textCoff]}>Coff</Text>
@@ -12,4 +12,4 @@ const Brandmarklogo = () => {
     </View>
   );
 };
-export default Brandmarklogo;
+export default BrandmarkLogo;

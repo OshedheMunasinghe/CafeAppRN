@@ -1,6 +1,6 @@
 import { StyleSheet } from "react-native";
 
-export const BrandmarklogoStyles = StyleSheet.create({
+export const BrandmarkLogoStyles = StyleSheet.create({
   textStyle: {
     fontSize: 25,
     fontFamily: "Gent-Bold",
@@ -15,8 +15,7 @@ export const BrandmarklogoStyles = StyleSheet.create({
     textAlign: "right",
   },
   container: {
-    justifyContent: "center",
-    alignItems: "center",
     flexDirection: "row",
+    left: 120,
   },
 });

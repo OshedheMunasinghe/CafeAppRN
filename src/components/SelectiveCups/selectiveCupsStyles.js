@@ -10,7 +10,7 @@ export const SelectiveCupsStyles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "#CABCAD",
     opacity: 0.75,
-    marginTop: 30
+    marginTop: 30,
   },
   buttonsContainer: {
     flexDirection: "row",

@@ -1,5 +1,5 @@
 import React from "react";
-import { Image, Text, View } from "react-native";
+import { Image, View } from "react-native";
 import StandardCircleButton from "../Buttons/SML/Standard/StandardCircleButton";
 import ChoosenCircleButton from "../Buttons/SML/Choosen/ChoosenCircleButton";
 import { SelectiveCupsStyles } from "./selectiveCupsStyles";

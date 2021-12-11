@@ -5,7 +5,7 @@ import { AppStyles } from "../../../styles/app.styles";
 
 const imageSize = 80;
 const { container, textContainer, headText, subText, priceText, imageContainer } = SpecialCardStyles;
-const {shadow} = AppStyles
+const { shadow } = AppStyles;
 const SpecialCard = ({ headTitle, subTitle, price, images }) => {
   return (
     <TouchableOpacity style={[container, shadow]}>
