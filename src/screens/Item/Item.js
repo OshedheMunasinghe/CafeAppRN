@@ -8,8 +8,6 @@ import BuyButton from "../../components/Buttons/Buy/buyButton";
 import { GlobalStyles } from "../../styles/global.styles";
 
 
-//TODO make sure image can change diffrent size.
-//TODO set menu bar for occation... remove it when you made super-class screen
 const {backgroundScreens} = GlobalStyles
 const Item = () => {
   return (

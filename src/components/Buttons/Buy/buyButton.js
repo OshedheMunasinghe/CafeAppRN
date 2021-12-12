@@ -5,7 +5,6 @@ import { BuyButtonStyles } from "./buyButton.styles";
 
 const { shadow } = GlobalStyles;
 const { container, buttonContainer, textContainer } = BuyButtonStyles;
-//TODO MISSING NAVIGATION
 //TODO missing logic when user has bough one drink.
 const BuyButton = () => {
   return (

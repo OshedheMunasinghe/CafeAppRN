@@ -4,7 +4,6 @@ import Chip from "../../Buttons/Chip/Chip";
 import { ListofchipsStyles } from "./listofchips.styles";
 
 const { container } = ListofchipsStyles;
-//TODO: All must be auto select how to do that in logic?
 
 const ListOfChips = () => {
   return (

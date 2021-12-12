@@ -9,8 +9,6 @@ import OrderedIcon from "../OrderedIcon/orderedIcon";
 import { ModalStyles } from "./modal.styles";
 import { useNavigation } from "@react-navigation/native";
 
-//TODO fix the logic, when user are in the item there must be the back button
-//TODO navigation back to menu screen
 const { iconContainer, coffeeContainer, backArrowContainer } = MenuTopBarStyles;
 const { shadow } = GlobalStyles;
 const {
@@ -70,7 +68,6 @@ const MenuTopBar = () => {
               <Text style={itemText}>2 items</Text>
               <Text style={priceText}>48.99 $</Text>
 
-              {/*TODO: this should navigate to thank you screen!!!! change on onPress!*/}
               <View>
                 <TouchableOpacity
                   style={[doneButtonContainer, shadow]}

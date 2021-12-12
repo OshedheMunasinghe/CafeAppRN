@@ -11,7 +11,6 @@ const SpecialCard = ({ headTitle, subTitle, price, images }) => {
   const navigation = useNavigation();
   return (
     <TouchableOpacity style={[container, shadow]} onPress={() => navigation.navigate('Item')} >
-      {/* TODO missing navigation*/}
       <View style={textContainer}>
         {/*  * HEAD TITLE*/}
         <Text style={headText}>{headTitle}</Text>
