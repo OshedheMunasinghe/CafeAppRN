@@ -7,6 +7,7 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import Menu from "./src/screens/Menu/Menu";
 import Item from "./src/screens/Item/Item";
 import ThankYou from "./src/screens/ThankYou/ThankYou";
+import CoffeProvider from "./src/Context/CoffeProvider";
 
 const { safeAreaViewContainer } = GlobalStyles;
 const headerShownBool = false;
@@ -14,17 +15,20 @@ const Stack = createNativeStackNavigator();
 
 const App = () => {
   return (
-    <NavigationContainer>
-      <StatusBar backgroundColor={"#d5c0ad"} barStyle={"dark-content"} />
-      <SafeAreaView style={safeAreaViewContainer}>
-        <Stack.Navigator>
-          <Stack.Screen name="Splash" component={Splash} options={{ headerShown: headerShownBool }} />
-          <Stack.Screen name="Menu" component={Menu} options={{ headerShown: headerShownBool }} />
-          <Stack.Screen name="Item" component={Item} options={{ headerShown: headerShownBool }} />
-          <Stack.Screen name="ThankYou" component={ThankYou} options={{ headerShown: headerShownBool }} />
-        </Stack.Navigator>
-      </SafeAreaView>
-    </NavigationContainer>
+    <CoffeProvider>
+      <NavigationContainer>
+        <StatusBar backgroundColor={"#d5c0ad"} barStyle={"dark-content"} />
+        <SafeAreaView style={safeAreaViewContainer}>
+          <Stack.Navigator>
+            <Stack.Screen name="Splash" component={Splash} options={{ headerShown: headerShownBool }} />
+            <Stack.Screen name="Menu" component={Menu} options={{ headerShown: headerShownBool }} />
+            <Stack.Screen name="Item" component={Item} options={{ headerShown: headerShownBool }} />
+            <Stack.Screen name="ThankYou" component={ThankYou} options={{ headerShown: headerShownBool }} />
+          </Stack.Navigator>
+        </SafeAreaView>
+      </NavigationContainer>
+    </CoffeProvider>
+
   );
 };
 

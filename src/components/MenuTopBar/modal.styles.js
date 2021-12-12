@@ -12,8 +12,8 @@ export const ModalStyles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     marginTop: 22,
-    backgroundColor: '#333',
-    opacity: 0.8
+    backgroundColor: "#333",
+    opacity: 0.95,
   },
   modalBody: {
     margin: 20,

@@ -8,10 +8,12 @@ import { useNavigation } from "@react-navigation/native";
 const { shadow } = GlobalStyles;
 const { textContainer, container, imageContainer, headerText, subText, priceText } = DrinkCardStyles;
 const imageSize = 120;
-const DrinkCard = ({ headTitle, subTitle, price, images }) => {
-  const navigation = useNavigation();
+const DrinkCard = ({ headTitle, subTitle, price, images, onPress }) => {
+    const navigation = useNavigation();
     return (
-      <TouchableOpacity style={[container, shadow]} onPress={() => navigation.navigate("Item")}>
+      <TouchableOpacity style={[container, shadow]} onPress={() => {
+        navigation.navigate("Item");
+      }}>
         {/*   * DRINK IMAGE */}
         <View style={imageContainer}>
           <Image source={images} style={{ width: imageSize, height: imageSize }} />
@@ -26,7 +28,6 @@ const DrinkCard = ({ headTitle, subTitle, price, images }) => {
           {/*  * PRICE */}
           <Text style={priceText}>{price}</Text>
         </View>
-        {/*TODO fix the logic with AddButton*/}
         <AddButton />
       </TouchableOpacity>
     );

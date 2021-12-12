@@ -1,5 +1,5 @@
 import React from "react";
-import { ScrollView, View } from "react-native";
+import { ScrollView, Text, View } from "react-native";
 import ListOfChips from "../../components/Lists/ListOfChips/ListofChips";
 import MenuTopBar from "../../components/MenuTopBar/MenuTopBar";
 import ListOfAllDrinks from "../../components/Lists/ListOfAllDrinks/ListOfAllDrinks";
@@ -8,6 +8,8 @@ import { GlobalStyles } from "../../styles/global.styles";
 
 const { backgroundScreens } = GlobalStyles;
 const Menu = () => {
+
+
   return (
     <View style={backgroundScreens}>
       <MenuTopBar />

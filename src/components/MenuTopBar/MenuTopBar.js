@@ -33,6 +33,7 @@ const MenuTopBar = () => {
       <IconMaterial name="arrow-back-ios" size={30} color="black" style={backArrowContainer}
                     onPress={() => navigation.goBack()} />
       <BrandmarkLogo />
+
       <Icon name="coffee" size={30} color="black" style={[coffeeContainer, shadow]}
             onPress={() => setModalVisible(true)} />
 
@@ -74,7 +75,7 @@ const MenuTopBar = () => {
                   onPress={() => setModalVisible(!modalVisible)}
                 >
                   <IconMaterial name="done" size={22} color="#744517"
-                                onPress={() => navigation.navigate('ThankYou')} />
+                                onPress={() => navigation.navigate("ThankYou")} />
                 </TouchableOpacity>
               </View>
             </View>
