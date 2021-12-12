@@ -15,7 +15,7 @@ const Splash = () => {
         muted={true}
         style={video}
       />
-      <OrderNowButton/>
+      <OrderNowButton />
     </View>
   );
 };

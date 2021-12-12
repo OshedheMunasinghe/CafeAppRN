@@ -1,13 +1,15 @@
 import React from "react";
-import { Text, TouchableOpacity } from "react-native";
+import { Text, TouchableOpacity, View } from "react-native";
 import { StandardCircleButtonStyles } from "./standardCircleButton.styles";
 
 const { container, textContainer } = StandardCircleButtonStyles;
-const StandardCircleButton = ({ title }) => {
+const StandardCircleButton = ({ title, onPress }) => {
   return (
-    <TouchableOpacity style={container}>
-      <Text style={textContainer}>{title}</Text>
-    </TouchableOpacity>
+    <View>
+      <TouchableOpacity style={container} onPress={onPress}>
+        <Text style={textContainer}>{title}</Text>
+      </TouchableOpacity>
+    </View>
   );
 };
 export default StandardCircleButton;

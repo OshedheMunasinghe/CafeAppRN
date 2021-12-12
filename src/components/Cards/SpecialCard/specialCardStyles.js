@@ -8,8 +8,9 @@ export const SpecialCardStyles = StyleSheet.create({
     borderRadius: 30,
     flexDirection: "row",
     alignItems: "center",
-    marginBottom: 16,
     justifyContent: "space-between",
+    marginLeft: 16,
+    marginTop: 18,
   },
   textContainer: {
     justifyContent: "flex-start",

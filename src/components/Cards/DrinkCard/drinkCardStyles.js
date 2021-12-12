@@ -6,7 +6,9 @@ export const DrinkCardStyles = StyleSheet.create({
     width: 180,
     height: 281,
     borderRadius: 30,
-    marginLeft: 23,
+    paddingLeft: 8,
+    marginRight: 18,
+    left: 16,
   },
   imageContainer: {
     justifyContent: "center",

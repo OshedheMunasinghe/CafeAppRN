@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 export const BuyButtonStyles = StyleSheet.create({
   container: {
     alignItems: "center",
-    marginTop: 100,
+    marginTop: 18,
   },
   buttonContainer: {
     backgroundColor: "#212325",

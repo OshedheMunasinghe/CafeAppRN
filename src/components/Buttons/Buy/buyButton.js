@@ -9,7 +9,7 @@ const { container, buttonContainer, textContainer } = BuyButtonStyles;
 //TODO missing logic when user has bough one drink.
 const BuyButton = () => {
   return (
-    <View style={container}>
+    <View style={[container, {}]}>
       <TouchableOpacity style={[buttonContainer, shadow]}>
         <Text style={textContainer}>BUY ONE</Text>
       </TouchableOpacity>

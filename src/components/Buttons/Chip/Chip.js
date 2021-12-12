@@ -31,7 +31,7 @@ const Chip = ({ text, width }) => {
   };
 
   return (
-    <View>
+    <View style={shadow}>
       {!pressed ?
         // * SELECTED BUTTON
         <TouchableOpacity style={[touchableContainer]} onPress={() => selectedButton()}>
@@ -40,7 +40,6 @@ const Chip = ({ text, width }) => {
             backgroundColor: backgrClr,
           },
             container,
-            shadow,
           ]}>
             <Text style={[textStyle, { color: textColor }]}>{text}</Text>
           </View>
@@ -52,7 +51,6 @@ const Chip = ({ text, width }) => {
             backgroundColor: backgrClr,
           },
             container,
-            shadow,
           ]}>
             <Text style={[textStyle, { color: textColor }]}>{text}</Text>
           </View>

@@ -3,14 +3,15 @@ import { Image, Text, TouchableOpacity, View } from "react-native";
 import { GlobalStyles } from "../../../styles/global.styles";
 import AddButton from "../../Buttons/Add/AddButton";
 import { DrinkCardStyles } from "./drinkCardStyles";
+import { useNavigation } from "@react-navigation/native";
 
 const { shadow } = GlobalStyles;
 const { textContainer, container, imageContainer, headerText, subText, priceText } = DrinkCardStyles;
 const imageSize = 120;
 const DrinkCard = ({ headTitle, subTitle, price, images }) => {
+  const navigation = useNavigation();
     return (
-//TODO MISSING NAVIGATION TO ITEM_VIEW
-      <TouchableOpacity style={[container, shadow]}>
+      <TouchableOpacity style={[container, shadow]} onPress={() => navigation.navigate("Item")}>
         {/*   * DRINK IMAGE */}
         <View style={imageContainer}>
           <Image source={images} style={{ width: imageSize, height: imageSize }} />

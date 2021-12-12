@@ -4,12 +4,12 @@ import ListOfChips from "../../components/Lists/ListOfChips/ListofChips";
 import MenuTopBar from "../../components/MenuTopBar/MenuTopBar";
 import ListOfAllDrinks from "../../components/Lists/ListOfAllDrinks/ListOfAllDrinks";
 import SpecialView from "../../components/Special/SpecialView";
+import { GlobalStyles } from "../../styles/global.styles";
 
-//TODO BUGG SCROLLVIEW MAYBE CHANGE TO FLAT ASS LIST?
-//TODO Navigation THIS IS GOING TO BE COMPLICATED GOOD LUCK :)
+const { backgroundScreens } = GlobalStyles;
 const Menu = () => {
   return (
-    <View>
+    <View style={backgroundScreens}>
       <MenuTopBar />
       <ScrollView pagingEnabled={true}>
         <ListOfChips />

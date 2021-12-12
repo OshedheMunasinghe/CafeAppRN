@@ -6,7 +6,6 @@ import { ListofchipsStyles } from "./listofchips.styles";
 const { container } = ListofchipsStyles;
 //TODO: All must be auto select how to do that in logic?
 
-// ? en chip kan ha en props just ALL där den kallar in alla componenter?
 const ListOfChips = () => {
   return (
     <ScrollView horizontal={true} pagingEnabled={true} style={container}>

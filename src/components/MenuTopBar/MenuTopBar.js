@@ -7,6 +7,7 @@ import { GlobalStyles } from "../../styles/global.styles";
 import IconMaterial from "react-native-vector-icons/MaterialIcons";
 import OrderedIcon from "../OrderedIcon/orderedIcon";
 import { ModalStyles } from "./modal.styles";
+import { useNavigation } from "@react-navigation/native";
 
 //TODO fix the logic, when user are in the item there must be the back button
 //TODO navigation back to menu screen
@@ -27,11 +28,12 @@ const {
 
 const MenuTopBar = () => {
   const [modalVisible, setModalVisible] = useState(false);
-
+  const navigation = useNavigation();
   return (
 
     <View style={iconContainer}>
-      <IconMaterial name="arrow-back-ios" size={30} color="black" style={backArrowContainer} />
+      <IconMaterial name="arrow-back-ios" size={30} color="black" style={backArrowContainer}
+                    onPress={() => navigation.goBack()} />
       <BrandmarkLogo />
       <Icon name="coffee" size={30} color="black" style={[coffeeContainer, shadow]}
             onPress={() => setModalVisible(true)} />
@@ -42,7 +44,7 @@ const MenuTopBar = () => {
         modalContainer
       }>
         <Modal
-          animationType="slide"
+          animationType="fade"
           transparent={true}
           visible={modalVisible}
           onRequestClose={() => {
@@ -74,7 +76,8 @@ const MenuTopBar = () => {
                   style={[doneButtonContainer, shadow]}
                   onPress={() => setModalVisible(!modalVisible)}
                 >
-                  <IconMaterial name="done" size={22} color="#744517" />
+                  <IconMaterial name="done" size={22} color="#744517"
+                                onPress={() => navigation.navigate('ThankYou')} />
                 </TouchableOpacity>
               </View>
             </View>

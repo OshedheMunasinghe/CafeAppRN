@@ -10,7 +10,7 @@ const OrderNowButton = () => {
   const navigation = useNavigation();
   return (
     <View>
-      <TouchableOpacity style={[buttonContainer, shadow]} onPress={() => navigation.navigate('Home')}>
+      <TouchableOpacity style={[buttonContainer, shadow]} onPress={() => navigation.navigate("Menu")}>
         <Text style={textContainer}>ORDER NOW</Text>
       </TouchableOpacity>
     </View>
