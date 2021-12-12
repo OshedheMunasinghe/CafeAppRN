@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { ChipStyles } from "./chip.styles";
-import { AppStyles } from "../../../styles/app.styles";
+import { GlobalStyles } from "../../../styles/global.styles";
 
 const { container, touchableContainer, textStyle } = ChipStyles;
-const { shadow } = AppStyles;
+const { shadow } = GlobalStyles;
 
 const regChipBackgrColor = "#D9CABC";
 const regChipTextColor = "black";

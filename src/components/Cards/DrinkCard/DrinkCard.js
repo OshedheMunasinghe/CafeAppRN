@@ -1,10 +1,10 @@
 import React from "react";
 import { Image, Text, TouchableOpacity, View } from "react-native";
-import { AppStyles } from "../../../styles/app.styles";
+import { GlobalStyles } from "../../../styles/global.styles";
 import AddButton from "../../Buttons/Add/AddButton";
 import { DrinkCardStyles } from "./drinkCardStyles";
 
-const { shadow } = AppStyles;
+const { shadow } = GlobalStyles;
 const { textContainer, container, imageContainer, headerText, subText, priceText } = DrinkCardStyles;
 const imageSize = 120;
 const DrinkCard = ({ headTitle, subTitle, price, images }) => {

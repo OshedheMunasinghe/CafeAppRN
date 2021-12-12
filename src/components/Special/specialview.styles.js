@@ -9,5 +9,6 @@ export const SpecialViewStyles = StyleSheet.create({
     color: "black",
     fontFamily: "Mont-Bold",
     fontSize: 20,
+    marginBottom: 18
   },
 });

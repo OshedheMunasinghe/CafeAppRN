@@ -2,7 +2,7 @@ import React from "react";
 import { Text, View } from "react-native";
 import Icon from "react-native-vector-icons/MaterialIcons";
 import { ItemCardStyles } from "./itemCard.styles";
-import { AppStyles } from "../../../styles/app.styles";
+import { GlobalStyles } from "../../../styles/global.styles";
 
 const {
   container,
@@ -16,7 +16,7 @@ const {
   headPriceContainer,
   ratePeopleRateContainer,
 } = ItemCardStyles;
-const { shadow } = AppStyles;
+const { shadow } = GlobalStyles;
 const ItemCard = () => {
   return (
     <View style={container}>

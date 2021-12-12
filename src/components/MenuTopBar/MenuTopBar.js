@@ -3,7 +3,7 @@ import { Modal, Text, TouchableOpacity, View } from "react-native";
 import BrandmarkLogo from "../BrandmarkLogo/BrandmarkLogo";
 import { MenuTopBarStyles } from "./menuTopBar.styles";
 import Icon from "react-native-vector-icons/Feather";
-import { AppStyles } from "../../styles/app.styles";
+import { GlobalStyles } from "../../styles/global.styles";
 import IconMaterial from "react-native-vector-icons/MaterialIcons";
 import OrderedIcon from "../OrderedIcon/orderedIcon";
 import { ModalStyles } from "./modal.styles";
@@ -11,7 +11,7 @@ import { ModalStyles } from "./modal.styles";
 //TODO fix the logic, when user are in the item there must be the back button
 //TODO navigation back to menu screen
 const { iconContainer, coffeeContainer, backArrowContainer } = MenuTopBarStyles;
-const { shadow } = AppStyles;
+const { shadow } = GlobalStyles;
 const {
   modalContainer,
   modalBodyContainer,

@@ -1,14 +1,16 @@
 import React from "react";
 import { Text, TouchableOpacity, View } from "react-native";
 import { OrdernowbuttonStyles } from "./ordernowbutton.styles";
-import { AppStyles } from "../../../styles/app.styles";
+import { GlobalStyles } from "../../../styles/global.styles";
+import { useNavigation } from "@react-navigation/native";
 
 const { buttonContainer, textContainer } = OrdernowbuttonStyles;
-const { shadow } = AppStyles;
+const { shadow } = GlobalStyles;
 const OrderNowButton = () => {
+  const navigation = useNavigation();
   return (
     <View>
-      <TouchableOpacity style={[buttonContainer, shadow]}>
+      <TouchableOpacity style={[buttonContainer, shadow]} onPress={() => navigation.navigate('Home')}>
         <Text style={textContainer}>ORDER NOW</Text>
       </TouchableOpacity>
     </View>

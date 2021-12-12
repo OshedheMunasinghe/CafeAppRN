@@ -1,10 +1,10 @@
 import { StatusBar, Text, View } from "react-native";
 import React from "react";
-import { AppStyles } from "../../styles/app.styles";
+import { GlobalStyles } from "../../styles/global.styles";
 import BoxView from "../../components/Cards/BoxCard/BoxView";
 import { ThankYouStyles } from "./thankYouStyles";
 
-const { thankYouViewContainer } = AppStyles;
+const { thankYouViewContainer } = GlobalStyles;
 const { text } = ThankYouStyles;
 
 const statusBackgrClr = "#37393b";
